@@ -8,8 +8,8 @@
   },
   "content_security_policy": {
     "extension_pages": {
-      "script-src": "'self'",  // Only allows external scripts, no inline scripts
-      "object-src": "'none'"   // Disables the use of <object>, <embed>, and <applet> elements
+      "script-src": ["'self'"],  // Only allows external scripts, no inline scripts
+      "object-src": ["'none'"]   // Disables object, embed, and applet elements
     }
   }
 }
