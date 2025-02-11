@@ -11,7 +11,6 @@
     "persistent": false
   },
   "content_security_policy": {
-    "script-src": "'self' 'unsafe-inline'",  // Allows inline scripts
-    "object-src": "'self'"
+    "extension_pages": "script-src 'self' 'unsafe-inline'; object-src 'self';"
   }
 }
