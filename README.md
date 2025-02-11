@@ -1,0 +1,1 @@
+# viqrc-rr-chrome-extention
