@@ -1,10 +1,11 @@
 {
-  "name": "VEXIQ Rapid Relay Scoring",
-  "description": "Scoring system for Rapid Relay in VIQRC",
-  "version": "1.0",
   "manifest_version": 3,
+  "name": "VIQRC Rapid Relay Scoring",
+  "version": "1.0",
+  "description": "A scoring tool",
   "action": {
-    "default_popup": "index.html",
+    "default_popup": "index.html"
     "default_icon": "icon.png"
-  }
+  },
+  "permissions": ["storage"]
 }
