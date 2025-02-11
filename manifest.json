@@ -1,15 +1,17 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "VIQRC Rapid Relay Scoring",
   "version": "1.0",
   "action": {
     "default_popup": "index.html",
     "default_icon": "icon.png"
   },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
   "content_security_policy": {
-    "extension_pages": {
-      "script-src": ["'self'"],  // Only allows external scripts, no inline scripts
-      "object-src": ["'none'"]   // Disables object, embed, and applet elements
-    }
+    "script-src": "'self' 'unsafe-inline'",  // Allows inline scripts
+    "object-src": "'self'"
   }
 }
