@@ -7,6 +7,9 @@
     "default_icon": "icon.png"
   },
   "content_security_policy": {
-    "extension_pages": "script-src 'self' 'unsafe-inline'; object-src 'self';"
+    "extension_pages": {
+      "script-src": "'self'",  // Only allows external scripts, no inline scripts
+      "object-src": "'none'"   // Disables the use of <object>, <embed>, and <applet> elements
+    }
   }
 }
